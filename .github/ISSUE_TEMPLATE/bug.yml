@@ -1,0 +1,19 @@
+name: Bug report
+description: Report an incorrect authorization decision or interface problem.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include the request, expected decision, and actual decision without sensitive policy data.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: Chrome 140, Firefox 142, Safari 19
+    validations:
+      required: true
